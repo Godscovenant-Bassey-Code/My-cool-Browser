@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+body {
+    background: rgb(249, 249, 251);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Helvetica Neue", sans-serif;
+}
+.container {
+    background: rgb(249, 249, 251);
+    min-height: 100vh;
+}
+.title-page {
+    display: flex;
+    margin-top: 9%;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.title-page img {
+    width: 7%;
+    user-select: none;
+}
+.title-page .title {
+    margin-top: .5%;
+    margin-left: 1%;
+    font-weight: 650;
+    font-size: 53px;
+    color: #000;
+    user-select: none;
+}
+.google-search-pane {
+    text-align: center;
+    margin-top: 19%;
+    position: absolute;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: center;
+    display: flex;
+}
+.google-search-pane.close {
+    display: none;
+}
+.bing-search-pane {
+    text-align: center;
+    margin-top: 19%;
+    position: absolute;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: center;
+    display: none;
+}
+.bing-search-pane.open {
+    display: flex;
+}
+.DuckduckGo-search-pane {
+    text-align: center;
+    margin-top: 19%;
+    position: absolute;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: center;
+    display: none;
+}
+.DuckduckGo-search-pane.open {
+    display: flex;
+}
+.Wikipedia-search-pane {
+    text-align: center;
+    margin-top: 19%;
+    position: absolute;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: center;
+    display: none;
+}
+.Wikipedia-search-pane.open {
+    display: flex;
+}
+.Address-search-pane {
+    text-align: center;
+    margin-top: 19%;
+    position: absolute;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: center;
+    display: none;
+}
+.Address-search-pane.open {
+    display: flex;
+}
+.search {
+    background: #fff;
+    width: 55%;
+    justify-content: space-between;
+    display: flex;
+    padding: 10px 0;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+.search input {
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 3px;
+    font-size: 17px;
+    margin-left: 1%;
+    color: rgb(4, 4, 49);
+}
+.search .serah-buttons,
+.search .serah2-buttons,
+.search .serah3-buttons,
+.search .serah4-buttons,
+.search .serah5-buttons {
+    display: flex;
+    margin-right: 2%;
+    user-select: none;
+}
+.search .goin {
+    margin-left: 1%;
+    user-select: none;
+}
+.search .serahGoogle, 
+.search .serahBing,
+.search .serahDuckduckGo,
+.search .serahWikipedia,
+.search .serahAddress {
+    margin-right: 2%;
+    cursor: pointer;
+    display: block;
+}
+.search .serahGoogle.close,
+.search .serahBing.close,
+.search .serahDuckduckGo.close,
+.search .serahWikipedia.close,
+.search .serahAddress.close {
+    display: none;
+}
+.search .serah2Google,
+.search .serah2Bing,
+.search .serah2DuckduckGo,
+.search .serah2Wikipedia,
+.search .serah2Address {
+    display: none;
+    margin-right: 5%;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.search .serah2Google.open,
+.search .serah2Bing.open,
+.search .serah2DuckduckGo.open,
+.search .serah2Wikipedia.open,
+.search .serah2Address.open {
+    display: block;
+}
+.settings {
+    position: absolute;
+    width: 100%;
+    margin-top: 16px;
+    /* right: 2%; */
+}
+.settings img {
+    position: absolute;
+    right: 1.3%;
+    user-select: none;
+    padding: 6px;
+    border-radius: 4px;
+}
+.settings img:hover {
+    background: #ebeaea;
+}
+.settings img:active {
+    background: #cfcece;
+}
+.setting-pane {
+    background: #fff;
+    position: absolute;
+    right: 1%;
+    top: 8%;
+    width: 20%;
+    text-align: center;
+    overflow: hidden;
+    height: 0vh;
+    border-radius: 15px;
+    transition: height .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.setting-pane.open {
+    height: 62vh;
+    transition: height .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.setting-pane .search-the-engines {
+    font-weight: bolder;
+    margin-top: 18%;
+    font-size: 20px;
+    cursor: default;
+    user-select: none;
+}
+.setting-pane .search-engine-option {
+    margin-top: 5%;
+    user-select: none;
+}
+.search-engine-option .google-pane {
+    background: #cac9c9;
+    cursor: pointer;
+    display: flex;
+    padding: 10px 0;
+    border: 1px solid transparent;
+}
+.search-engine-option .google-pane:hover {
+    border: 1px solid #cac9c9;
+}
+.search-engine-option .google-pane img {
+    margin-left: 15%;
+}
+.search-engine-option .google-pane .title {
+    margin-left: 15%;
+    font-size: 20px;
+}
+.search-engine-option .bing-pane,.search-engine-option .duckDuckGo-pane,.search-engine-option .wikipedia-pane,.search-engine-option .address-pane     {
+    cursor: pointer;
+    display: flex;
+    padding: 10px 0;
+    margin-top: 2%;
+    border: 1px solid transparent;
+}
+.search-engine-option .bing-pane:hover,.search-engine-option .duckDuckGo-pane:hover,.search-engine-option .wikipedia-pane:hover,.search-engine-option .address-pane:hover {
+    border: 1px solid #cac9c9;
+}
+.search-engine-option .bing-pane img,.search-engine-option .duckDuckGo-pane img,.search-engine-option .wikipedia-pane img {
+    margin-left: 15%;
+}
+.search-engine-option .bing-pane .title,.search-engine-option .duckDuckGo-pane .title,.search-engine-option .wikipedia-pane .title{
+    margin-left: 15%;
+    font-size: 20px;
+}
+.search-engine-option .address-pane img {
+    margin-left: 18%;
+}
+.search-engine-option .address-pane .title {
+    margin-left: 18%;
+    font-size: 20px;
+}
+.producer {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    text-align: center;
+    color: #b7b7b7;
+    user-select: none;
+}
+.producer .name {
+    font-size: 2em;
+    font-weight: bolder;
+}
+.producer .date {
+    margin-top: 5px;
+}
+.shortcut-buttons {
+    background: rgb(229, 229, 229);
+    position: absolute;
+    margin-top: 16px;
+    left: 1.3%;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    user-select: none;
+}
+.shortcut-buttons:hover {
+    background: rgb(215, 213, 213)
+}
+.shortcut-buttons:active {
+    background: rgb(203, 202, 202)
+}
+.shortcut-panes{
+    background: #fff;
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 1%;
+    width: 25%;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.shortcut-panes.open {
+    height: 18vh;
+    transition: height .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+.shortcut-panes .escape, .shortcut-panes .delete,.shortcut-panes .ctrlh {
+    display: flex;
+    margin-top: 2%;
+    cursor: default;
+}
+.shortcut-panes .delete, .shortcut-panes .ctrlh {
+    margin-top: 5%;
+}
+.shortcut-panes .escape .l1,.shortcut-panes .delete .l1,.shortcut-panes .ctrlh .l1 {
+    margin-left: 5%;
+    color: green;
+    user-select: none;
+}
+.shortcut-panes .escape .title,.shortcut-panes .delete .title,.shortcut-panes .ctrlh .title {
+    margin-left: 5%;
+}

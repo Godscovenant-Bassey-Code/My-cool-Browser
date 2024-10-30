@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<!-- Browser Created by Godscovenant Jesuslove Bassey -->
+<!-- On Saturday, 26th October, 2024 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pictures/Favicon-sign-black.png" type="png">
+    <title>New Tab</title>
+</head>
+<body class="body">
+    
+    <div class="container">
+
+        <div class="settings" title="Personalize new tab">
+            <img src="pictures/settings.svg" alt="favicon settings">
+        </div>
+        <div class="title-page">
+            <img src="pictures/Favicon-sign-black.png" alt="Favicon Image">
+            <div class="title">Favicon</div>
+        </div>
+
+        
+        <!-- For Google Page -->
+        <div class="google-search-pane" title="Search the page">
+            <div class="search">
+            <img src="pictures/google.ico" alt="google" class="goin">
+            <input type="text" placeholder="Search With Google" id="search-google" data-110n-args="engine":"Google">
+            <div class="serah-buttons">
+            <img src="pictures/search.svg" alt="search" class="serahGoogle" onclick="searchitGoogle()">
+            <a href="" id="searchmeGoogle"><img src="pictures/green-search.svg" alt="search" class="serah2Google" onclick="searchitGoogle()"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- For Bing Page -->
+    <div class="bing-search-pane" title="Search the page">
+        <div class="search">
+        <img src="pictures/bing.ico" alt="google" class="goin">
+        <input type="text" placeholder="Search With Bing" id="search-bing" data-110n-args="engine":"Bing">
+        <div class="serah2-buttons">
+        <img src="pictures/search.svg" alt="search" class="serahBing" onclick="searchitBing()">
+        <a href="" id="searchmebing"><img src="pictures/green-search.svg" alt="search" class="serah2Bing" onclick="searchitBing()"></a>
+        </div>
+    </div>
+</div>
+
+<!-- For DuckduckGo Page -->
+<div class="DuckduckGo-search-pane" title="Search the page">
+    <div class="search">
+    <img src="pictures/duckDuckGo.ico" alt="DuckduckGo" class="goin">
+    <input type="text" placeholder="Search With DuckduckGo" id="search-DuckduckGo" data-110n-args="engine":"DuckduckGo">
+    <div class="serah3-buttons">
+    <img src="pictures/search.svg" alt="search" class="serahDuckduckGo" onclick="searchitDuckduckGo()">
+    <a href="" id="searchmeDuckduckGo"><img src="pictures/green-search.svg" alt="search" class="serah2DuckduckGo" onclick="searchitDuckduckGo()"></a>
+    </div>
+</div>
+</div>
+
+<!-- For Wikipedia Page -->
+<div class="Wikipedia-search-pane" title="Search the page">
+    <div class="search">
+    <img src="pictures/wikipedia.ico" alt="Wikipedia" class="goin">
+    <input type="text" placeholder="Search With Wikipedia" id="search-Wikipedia" data-110n-args="engine":"Wikipedia">
+    <div class="serah4-buttons">
+    <img src="pictures/search.svg" alt="search" class="serahWikipedia" onclick="searchitWikipedia()">
+    <a href="" id="searchmeWikipedia"><img src="pictures/green-search.svg" alt="search" class="serah2Wikipedia" onclick="searchitDuckduckGo()"></a>
+    </div>
+</div>
+</div>
+
+<!-- For Address Page -->
+<div class="Address-search-pane" title="Search the page">
+    <div class="search">
+    <img src="pictures/address.svg" alt="Address" class="goin">
+    <input type="text" placeholder="Enter the Address like 10.0.0.1" id="search-Address" data-110n-args="engine":"Address">
+    <div class="serah5-buttons">
+    <img src="pictures/search.svg" alt="search" class="serahAddress" onclick="searchitAddress()">
+    <a href="" id="searchmeAddress"><img src="pictures/green-search.svg" alt="search" class="serah2Address" onclick="searchitAddress()"></a>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="setting-pane">
+    <div class="search-the-engines">
+        <div class="title">Search Engines</div>
+        </div>
+
+        <div class="search-engine-option">
+            <div class="google-pane" id="mrGoogle">
+                <img src="pictures/google.ico" alt="google-fav">
+                <div class="title">Google</div>
+            </div>
+
+
+            <div class="bing-pane" id="mrBing">
+                <img src="pictures/bing.ico" alt="bing-fav">
+                <div class="title">Bing</div>
+            </div>
+
+
+            <div class="duckDuckGo-pane" id="mrDuck">
+                <img src="pictures/duckDuckGo.ico" alt="duckDuckGo-fav">
+                <div class="title">DuckDuckGo</div>
+            </div>
+
+
+            <div class="wikipedia-pane" id="mrWiki">
+                <img src="pictures/wikipedia.ico" alt="wikipedia(en)-fav">
+                <div class="title">Wikipedia(en)</div>
+            </div>
+
+
+            <div class="address-pane" id="mrAddr">
+                <img src="pictures/address.svg" alt="address-fav">
+                <div class="title">Address</div>
+            </div>
+        </div>
+</div>
+
+<div class="shortcut-buttons">Shortcut Keys</div>
+
+<div class="shortcut-panes">
+    <!-- For Esc -->
+    <div class="escape">
+        <div class="l1">Escape</div>
+        <div class="title">Settings (Personalize New Tab)</div>
+    </div>
+
+     <!-- For Del -->
+     <div class="delete">
+        <div class="l1">Delete</div>
+        <div class="title">Clear all words in the Search box</div>
+    </div>
+
+    <!-- For Ctrl + H -->
+    <div class="ctrlh">
+        <div class="l1">Ctrl + H</div>
+        <div class="title">Enter the History in your Browser</div>
+    </div>
+</div>
+
+<div class="producer">
+    <div class="name">Bassey, Godscovenant Jesuslove</div>
+    <div class="date">Saturday, 26th October 2024, 8:00pm</div>
+</div>
+    </div>
+
+    <script>
+
+        // Google Setup
+        let searchGoogle = document.getElementById("search-google");
+        let searchmeGoogle = document.getElementById("searchmeGoogle");
+        const serahOneGoogle = document.querySelector('.serahGoogle');
+        const serahTwoGoogle = document.querySelector('.serah2Google');
+
+        // Bing Setup
+        let searchBing = document.getElementById("search-bing");
+        let searchmeBing = document.getElementById("searchmebing");
+        const serahOneBing = document.querySelector('.serahBing');
+        const serahTwoBing = document.querySelector('.serah2Bing');
+
+        // DuckduckGo Setup
+        let searchDuck = document.getElementById("search-DuckduckGo");
+        let searchmeDuck = document.getElementById("searchmeDuckduckGo");
+        const serahOneDuck = document.querySelector('.serahDuckduckGo');
+        const serahTwoDuck = document.querySelector('.serah2DuckduckGo');
+
+        // Wikipedia Setup
+        let searchWiki = document.getElementById("search-Wikipedia");
+        let searchmeWiki = document.getElementById("searchmeWikipedia");
+        const serahOneWiki = document.querySelector('.serahWikipedia');
+        const serahTwoWiki = document.querySelector('.serah2Wikipedia');
+
+        // Address Setup
+        let searchAddr = document.getElementById("search-Address");
+        let searchmeAddr = document.getElementById("searchmeAddress");
+        const serahOneAddr = document.querySelector('.serahAddress');
+        const serahTwoAddr = document.querySelector('.serah2Address');
+
+        // Other Setup
+        const settings = document.querySelector(".settings");
+        const settingPane = document.querySelector(".setting-pane");
+
+
+        const GooglePane = document.querySelector(".google-pane");
+        const BingPane = document.querySelector(".bing-pane");
+        const WikiPane = document.querySelector(".wikipedia-pane");
+        const DuckPane = document.querySelector(".duckDuckGo-pane");
+        const AddrPane = document.querySelector(".address-pane");
+
+        let google = document.getElementById("mrGoogle");
+        let bing = document.getElementById("mrBing");
+        let wiki = document.getElementById("mrWiki");
+        let duck = document.getElementById("mrDuck");
+        let addr = document.getElementById("mrAddr");
+
+        const GoogleSearchPane = document.querySelector(".google-search-pane");
+        const BingSearchPane = document.querySelector(".bing-search-pane");
+        const DuckSearchPane = document.querySelector(".DuckduckGo-search-pane");
+        const WikiSearchPane = document.querySelector(".Wikipedia-search-pane");
+        const AddrSearchPane = document.querySelector(".Address-search-pane");
+
+        const shortcutPanes = document.querySelector(".shortcut-panes");
+        const shortcutButtons = document.querySelector(".shortcut-buttons");
+
+
+        // Google Search
+        function searchitGoogle() {
+            setInterval(() => {
+                
+            if (searchGoogle.value.length > 0) {
+              searchmeGoogle.href = "https://www.google.com/search?client=favicon-b-d&q=" + searchGoogle.value;
+              serahOneGoogle.classList.add('close');
+              serahTwoGoogle.classList.add('open');
+            }else{
+                serahOneGoogle.classList.remove('close');
+                serahTwoGoogle.classList.remove('open')
+            }
+        }, 100);
+        }
+
+        // Bing Search
+        function searchitBing() {
+            setInterval(() => {
+                
+            if (searchBing.value.length > 0) {
+              searchmeBing.href = "https://www.bing.com/search?form=MOZLBR&pc=MOZI&q=" + searchBing.value;
+              serahOneBing.classList.add('close');
+              serahTwoBing.classList.add('open');
+            }else{
+                serahOneBing.classList.remove('close');
+                serahTwoBing.classList.remove('open')
+            }
+        }, 100);
+        }
+
+        // DuckduckGo Search
+        function searchitDuckduckGo() {
+            setInterval(() => {
+                
+            if (searchDuck.value.length > 0) {
+              searchmeDuck.href = "https://duckduckgo.com/?t=ffab&q=" + searchDuck.value;
+              serahOneDuck.classList.add('close');
+              serahTwoDuck.classList.add('open');
+            }else{
+                serahOneDuck.classList.remove('close');
+                serahTwoDuck.classList.remove('open')
+            }
+        }, 100);
+        }
+
+        // Wikipedia Search
+        function searchitWikipedia() {
+            setInterval(() => {
+                
+            if (searchWiki.value.length > 0) {
+              searchmeWiki.href = "https://en.wikipedia.org/wiki/Special:Search?search=" + searchWiki.value;
+              serahOneWiki.classList.add('close');
+              serahTwoWiki.classList.add('open');
+            }else{
+                serahOneWiki.classList.remove('close');
+                serahTwoWiki.classList.remove('open')
+            }
+        }, 100);
+        }
+
+        // Address Search
+        function searchitAddress() {
+            setInterval(() => {
+                
+            if (searchAddr.value.length > 0) {
+              searchmeAddr.href = "http://" + searchAddr.value;
+              serahOneAddr.classList.add('close');
+              serahTwoAddr.classList.add('open');
+            }else{
+                serahOneAddr.classList.remove('close');
+                serahTwoAddr.classList.remove('open')
+            }
+        }, 100);
+        }
+
+
+
+        // Other Setup
+        settings.addEventListener('click',()=>{
+            settingPane.classList.toggle('open')
+        });
+
+        GooglePane.addEventListener('click',()=>{
+            GoogleSearchPane.classList.remove('close');
+            BingSearchPane.classList.remove('open');
+            DuckSearchPane.classList.remove('open');
+            WikiSearchPane.classList.remove('open');
+            AddrSearchPane.classList.remove('open');
+            google.style.background = '#cac9c9';
+            bing.style.background = 'transparent';
+            duck.style.background = 'transparent';
+            wiki.style.background = 'transparent';
+            addr.style.background = 'transparent';
+            searchGoogle.value = ''
+        })
+
+        BingPane.addEventListener('click',()=>{
+            BingSearchPane.classList.add('open');
+            GoogleSearchPane.classList.add('close');
+            DuckSearchPane.classList.remove('open');
+            WikiSearchPane.classList.remove('open');
+            AddrSearchPane.classList.remove('open');
+            bing.style.background = '#cac9c9';
+            google.style.background = 'transparent';
+            duck.style.background = 'transparent';
+            wiki.style.background = 'transparent';
+            addr.style.background = 'transparent';
+            searchBing.value = ''
+        })
+
+        DuckPane.addEventListener('click',()=>{
+            DuckSearchPane.classList.add('open');
+            GoogleSearchPane.classList.add('close');
+            BingSearchPane.classList.remove('open');
+            WikiSearchPane.classList.remove('open');
+            AddrSearchPane.classList.remove('open');
+            duck.style.background = '#cac9c9';
+            google.style.background = 'transparent';
+            bing.style.background = 'transparent';
+            wiki.style.background = 'transparent';
+            addr.style.background = 'transparent';
+            searchDuck.value = ''
+        })
+
+        WikiPane.addEventListener('click',()=>{
+            WikiSearchPane.classList.add('open');
+            GoogleSearchPane.classList.add('close');
+            BingSearchPane.classList.remove('open');
+            DuckSearchPane.classList.remove('open');
+            AddrSearchPane.classList.remove('open');
+            wiki.style.background = '#cac9c9';
+            google.style.background = 'transparent';
+            bing.style.background = 'transparent';
+            duck.style.background = 'transparent';
+            addr.style.background = 'transparent';
+            searchWiki.value = ''
+        })
+
+        AddrPane.addEventListener('click',()=>{
+            AddrSearchPane.classList.add('open');
+            GoogleSearchPane.classList.add('close');
+            BingSearchPane.classList.remove('open');
+            DuckSearchPane.classList.remove('open');
+            WikiSearchPane.classList.remove('open');
+            addr.style.background = '#cac9c9';
+            google.style.background = 'transparent';
+            bing.style.background = 'transparent';
+            duck.style.background = 'transparent';
+            wiki.style.background = 'transparent';
+            searchAddr.value = ''
+        })
+
+
+        searchGoogle.value = ''
+
+        addEventListener(`keyup`, function (e) {
+    if (e.code === "Escape") {
+        settingPane.classList.toggle('open')
+    }})
+
+    addEventListener(`keyup`, function (e) {
+    if (e.code === "Delete") {
+        searchGoogle.value = '';searchBing.value = '';searchWiki.value = '';searchDuck.value = '';searchAddr.value = ''
+    }})
+
+    // For Shortcut Panes
+    shortcutButtons.addEventListener('click',()=>{
+        shortcutPanes.classList.toggle('open')
+    }) 
+
+    // For closing Setup
+    shortcutButtons.addEventListener('click',()=>{
+        settingPane.classList.remove('open')
+    })
+    settings.addEventListener('click',()=>{
+        shortcutPanes.classList.remove('open')
+    })
+    </script>
+
+
+</body>
+</html>
